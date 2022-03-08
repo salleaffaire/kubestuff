@@ -1,3 +1,4 @@
+
 # Kubernetes Clusters
 
 ## Clusters on Windows - WSL
@@ -130,6 +131,14 @@ Select your distro and chose the `/home/<user>/.kube/` folder.
 You should now see your local cluster from Lens.
 
 ### Install Prometheus
+
+Add the repository
+
+```bash
+helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+```
+
+Install with default configuration
 
 ```bash
 helm install prometheus-local prometheus-community/prometheus
